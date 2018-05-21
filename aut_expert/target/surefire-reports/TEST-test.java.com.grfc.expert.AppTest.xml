@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="test.java.com.grfc.expert.AppTest" time="0.685" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Users\psi\scoop\apps\oraclejdk\current\jre\bin"/>
+    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\psi\git\aut_expert"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\psi\git\aut_expert"/>
+    <property name="java.runtime.version" value="1.8.0_151-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Users\psi\scoop\apps\oraclejdk\current\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\psi\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Users\psi\scoop\apps\maven\3.5.2\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Users\psi\scoop\apps\oraclejdk\current\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\PostgreSQL\9.4\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Users\psi\scoop\apps\maven\3.5.2\bin;C:\Users\psi\scoop\apps\maven\3.5.2\bin;C:\Users\psi\scoop\apps\oraclejdk\8u151-b12\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Users\psi\scoop\apps\oraclejdk\current\bin;C:\Users\psi\scoop\apps\maven\current\bin;C:\Users\psi\scoop\shims;C:\Users\psi\AppData\Local\Programs\Fiddler;C:\Users\psi\AppData\Local\GitHubDesktop\bin;C:\_java\chromedriver_win32;."/>
+    <property name="maven.conf" value="C:\Users\psi\scoop\apps\maven\3.5.2\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="library.jansi.path" value="C:\Users\psi\scoop\apps\maven\3.5.2\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\psi"/>
+    <property name="user.timezone" value="GMT+03:00"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="user.name" value="psi"/>
+    <property name="java.class.path" value="C:\Users\psi\scoop\apps\maven\3.5.2\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Users\psi\scoop\apps\oraclejdk\current\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test site"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="ru"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_151"/>
+    <property name="java.ext.dirs" value="C:\Users\psi\scoop\apps\oraclejdk\current\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Users\psi\scoop\apps\oraclejdk\current\jre\lib\resources.jar;C:\Users\psi\scoop\apps\oraclejdk\current\jre\lib\rt.jar;C:\Users\psi\scoop\apps\oraclejdk\current\jre\lib\sunrsasign.jar;C:\Users\psi\scoop\apps\oraclejdk\current\jre\lib\jsse.jar;C:\Users\psi\scoop\apps\oraclejdk\current\jre\lib\jce.jar;C:\Users\psi\scoop\apps\oraclejdk\current\jre\lib\charsets.jar;C:\Users\psi\scoop\apps\oraclejdk\current\jre\lib\jfr.jar;C:\Users\psi\scoop\apps\oraclejdk\current\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp866"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\psi\scoop\apps\maven\3.5.2\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp866"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="endToEnd" classname="test.java.com.grfc.expert.AppTest" time="0.569">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at test.java.com.grfc.expert.AppTest.endToEnd(AppTest.java:177)
+</error>
+    <system-out><![CDATA[url = http://192.168.71.62/api/v1/users/auth/login
+urlParams = username=man&password=pswd
+200
+response = {"user":{"username":"man","first_name":"Эксперт","last_name":"Рядовой","middle_name":"","is_active":true,"position":"expert","phone_number":"","role":"expert","pk":113,"full_name":"Эксперт Рядовой","email":"t1nkt35t@gmail.com"},"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im1hbiIsImV4cCI6MTUyNjAxOTk0MCwib3JpZ19pYXQiOjE1MjU0MTUxNDAsImVtYWlsIjoidDFua3QzNXRAZ21haWwuY29tIiwidXNlcl9pZCI6MTEzfQ.JCe456aP4LkSCuriF1SQKZyTwLXmieJLjPjeKkoeZ-U"}
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im1hbiIsImV4cCI6MTUyNjAxOTk0MCwib3JpZ19pYXQiOjE1MjU0MTUxNDAsImVtYWlsIjoidDFua3QzNXRAZ21haWwuY29tIiwidXNlcl9pZCI6MTEzfQ.JCe456aP4LkSCuriF1SQKZyTwLXmieJLjPjeKkoeZ-U
+url = http://192.168.71.62/api/v1/users/man/review-inquiries/assign
+urlParams = {"inquiry_ids":["1374"],"coauthors_ids":[113],"group_manager_id":115}
+200
+response = {"1374":{"status":400,"report":{"detail":"Ошибка! Экспертиза не в статусе Черновик."}}}
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+</testsuite>

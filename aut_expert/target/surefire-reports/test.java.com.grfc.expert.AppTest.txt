@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: test.java.com.grfc.expert.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.685 s <<< FAILURE! - in test.java.com.grfc.expert.AppTest
+endToEnd(test.java.com.grfc.expert.AppTest)  Time elapsed: 0.569 s  <<< ERROR!
+java.lang.NullPointerException
+	at test.java.com.grfc.expert.AppTest.endToEnd(AppTest.java:177)
+
