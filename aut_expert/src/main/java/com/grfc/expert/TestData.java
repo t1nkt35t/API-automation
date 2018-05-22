@@ -1,5 +1,7 @@
 package main.java.com.grfc.expert;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -61,5 +63,10 @@ public class TestData {
 		driver.findElement(By.xpath("//div[@class='modal-content']//button[@id='submitExpertReviewRequest']")).click();
 		driver.close();
 		return name;
+	}
+	
+	public static void createCP () throws IOException, InterruptedException {
+		HttpRequest.sendPostRequest("http://192.168.71.63:15672/api/exchanges/eais/amq.default/publish",
+				"", "Basic ZWFpczplYWlzMTIz",  Settings.httpContType("JSON"),"{\"vhost\":\"eais\",\"name\":\"amq.default\",\"properties\":{\"delivery_mode\":1,\"headers\":{}},\"routing_key\":\"eais_messages_boy\",\"delivery_mode\":\"1\",\"payload\":\"{\\\"message_type\\\":\\\"review_inquiry\\\",\\\"send_datetime\\\":\\\"06.04.2018 14:59:55\\\",\\\"message\\\":{\\\"id\\\":10109990,\\\"id_expertise_type\\\":\\\"child_porn\\\",\\\"expertise_type\\\":\\\"child_porn\\\",\\\"media_type\\\":\\\"2\\\",\\\"direction_date_time\\\":\\\"06.04.2018 14:51\\\",\\\"resource_url\\\":\\\"https:\\\\/\\\\/e621.net\\\\/post\\\\/show\\\\/389071\\\\/breasts-cub-duo-female-friendship_is_magic-fuchs-h\\\",\\\"access_information\\\":\\\"dfbdfbdfbdfbdfbdfbdfbdfbdfbdfbdfb\\\",\\\"comment\\\":\\\"dfbdfbdfbdrtgtrgrtgrfbdfbdfbdfbdfbdf\\\",\\\"comment_for_rework\\\":\\\"dfdfbdfbdfbdfbdfbdfbdfbfd\\\",\\\"comment_from_monitoring\\\":\\\"dfdvfvdfvdvdfvdfvdvdf\\\",\\\"files\\\":{\\\"content_type\\\":\\\"image\\\",\\\"format\\\":\\\"png\\\",\\\"encoding\\\":\\\"base64\\\",\\\"name\\\":\\\"scr_msgid_164791_5ac75f19718e7.png\\\",\\\"body\\\":\\\"iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAA3NCSVQICAjb4U\\\\/gAAAACXBIWXMAADddAAA3XQEZgEZdAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAFFQTFRF\\\\/\\\\/\\\\/\\\\/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALIimcAAAABp0Uk5TAAEHCBgZJi1JcH+AhJeYs7XByNrj5vLz9fYIbGB4AAABb0lEQVR42u3byW6DQBAE0AYbG9IsZof6\\\\/w\\\\/NIZGDrUjjRIPLsqrOrenHcoJuswdy8mYcGz\\\\/Zg\\\\/lrfSBJsQIAsBbJHvXB8y645pLErw+mwCZF\\\\/Prg81y3B66n2PXBfOAmHrs+mOb2wCZ2fTDj7YFj7PpgcJfY9QIIIMArAdK8bvsZO2fu2zpPf2mfVROelqnK7tofygVPzVIetv2PHZ6e7vjT\\\\/zyAkOF8vX5Kf2D4vgeHDqR0X+9BCVpKM7Ns4QGWzMwqEFOZpRMTMKWWg5rcai6gtpYLaK3nAnqbuYDZQI4AAggggACvB7CdI4AAAgggwNsA\\\\/L\\\\/wSAAHF+DgAhxcgIMLcHABDi7AwQU4uAAHF+DgAhxcgIMLcHABDi7AQQbE+kEpgAACCCCAAAIIIIAAAgggwPsA9LleAAEEEOB9APSBRvpIJ32olT7WSx9spo9204fb+eP99AUH\\\\/ooHfcmFv+bDX3Tir3oZfdnNjLXu9wn8HYQI7nJIFwAAAABJRU5ErkJggg==\\\"}}}\",\"headers\":{},\"props\":{},\"payload_encoding\":\"string\"}");
 	}
 }
