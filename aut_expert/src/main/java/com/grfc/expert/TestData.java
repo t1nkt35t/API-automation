@@ -1,22 +1,25 @@
 package main.java.com.grfc.expert;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TestData {
 	public static String createCard () throws InterruptedException {
-		String ip = "192.168.71.65";
+		String ip = "192.168.71.58";
 		System.setProperty("webdriver.chrome.driver", "c:/_java/chromedriver_win32/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		WebDriverWait wait = new WebDriverWait(driver, 10);	
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.get("http://" + ip);	
 		driver.findElement(By.id("id_username")).sendKeys("s.plekhanov");
 		driver.findElement(By.id("id_password")).sendKeys("qwerty123");
@@ -53,15 +56,17 @@ public class TestData {
 		driver.findElement(By.xpath("//td/a[contains(text(), '"+ name + "')]")).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//html//div[@id='lifeCircleButtonPanel']//a[@class='b-status-button btn btn-success has-spinner']")));
 		driver.findElement(By.xpath("//html//div[@id='lifeCircleButtonPanel']//a[@class='b-status-button btn btn-success has-spinner']")).click();
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li/a[contains(text(), 'Экспертиза')]")));
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//li/a[contains(text(), 'Экспертиза')]")));
-		driver.findElement(By.xpath("//li/a[contains(text(), 'Экспертиза')]")).click();
+		
+		Actions action = new Actions(driver);
+		Thread.sleep(1000);
+		action.moveToElement(driver.findElement(By.xpath("//li[@class='expert-review-tab']/a"))).click().perform();
+
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("sendExpressExpertReviewRequest")));
 		driver.findElement(By.id("sendExpressExpertReviewRequest")).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='modal-content']//button[@id='submitExpertReviewRequest']")));
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='modal-content']//button[@id='submitExpertReviewRequest']")));
 		driver.findElement(By.xpath("//div[@class='modal-content']//button[@id='submitExpertReviewRequest']")).click();
-		driver.close();
+//		driver.close();
 		return name;
 	}
 	
